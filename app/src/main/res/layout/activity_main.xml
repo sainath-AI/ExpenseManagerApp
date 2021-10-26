@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addTransactionCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/dp10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ivWallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/ic_purse" />
+
+            <TextView
+                android:id="@+id/tvCash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_toEndOf="@+id/ivWallet"
+                android:text="@string/cash"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp15" />
+
+            <TextView
+                android:id="@+id/tvCashAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCash"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_toEndOf="@+id/ivWallet"
+                android:text="@string/zero"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp20" />
+
+            <TextView
+                android:id="@+id/tvBellNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginEnd="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_toLeftOf="@+id/threeDots"
+                android:background="@drawable/ic_bell_notification_svg" />
+
+            <TextView
+                android:id="@+id/threeDots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/ic_three_dots_svg" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp10">
+
+            <TextView
+                android:id="@+id/tvInflow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginEnd="@dimen/dp10"
+                android:text="@string/inflow"
+                android:textSize="@dimen/sp20" />
+
+            <TextView
+                android:id="@+id/tvInflowAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/dp10"
+                android:textColor="@color/dark_blue"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginEnd="@dimen/dp10"
+                android:text="@string/zero"
+                android:textSize="@dimen/sp20" />
+
+            <TextView
+                android:id="@+id/tvOutflowAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvInflow"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/dp10"
+                android:textColor="@color/red"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginEnd="@dimen/dp10"
+                android:text="@string/zero"
+                android:textSize="@dimen/sp20" />
+
+            <View
+                android:id="@+id/vLine"
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_below="@id/tvOutflowAmount"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/dp10"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/tvTotalFlow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vLine"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginEnd="@dimen/dp10"
+                android:text="@string/zero"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvInflow"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginEnd="@dimen/dp10"
+                android:text="@string/outflow"
+                android:textSize="@dimen/sp20" />
+
+            <Button
+                android:id="@+id/btnViewReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTotalFlow"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/curve_for_button"
+                android:padding="@dimen/dp10"
+                android:text="@string/view_report_for_this_period"
+                android:textAllCaps="false"
+                android:textColor="@color/theme_green" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="@color/light_gray"
+        android:id="@+id/transactionRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="417dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/newNotes"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/red"
+        android:src="@drawable/add" />
+
+
+</LinearLayout>

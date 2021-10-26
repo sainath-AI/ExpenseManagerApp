@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dates_entries">
+        <item>13/03/2021</item>
+        <item>03/13/2021</item>
+        <item>2021/03/13</item>
+    </string-array>
+
+    <string-array name="dates_values">
+        <item>13/03/2021</item>
+        <item>03/13/2021</item>
+        <item>2021/03/13</item>
+    </string-array>
+</resources>

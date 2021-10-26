@@ -1,0 +1,12 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Normal</item>
+        <item>Advanced</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>normal</item>
+        <item>advanced</item>
+    </string-array>
+</resources>

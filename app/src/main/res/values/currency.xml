@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="currency_entries">
+        <item>INR</item>
+        <item>USD</item>
+    </string-array>
+
+    <string-array name="currency_values">
+        <item>INR</item>
+        <item>USD</item>
+    </string-array>
+</resources>

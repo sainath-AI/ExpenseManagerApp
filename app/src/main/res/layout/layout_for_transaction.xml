@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp10"
+    android:elevation="@dimen/dp10">
+
+    <RelativeLayout
+        android:id="@+id/rlUpdateTransaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/tvDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/saturday" />
+
+        <TextView
+            android:id="@+id/tvTransactionDateToDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDay"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:text="sds"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp20" />
+
+        <ImageView
+            android:id="@+id/ivCategoryImage"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_below="@id/tvTransactionDateToDisplay"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="@dimen/dp15"
+            android:src="@drawable/ic_question_tag" />
+
+
+        <TextView
+            android:id="@+id/tvTransactionCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTransactionDateToDisplay"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:layout_toRightOf="@id/ivCategoryImage"
+            android:text="sds"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18" />
+
+
+        <TextView
+            android:id="@+id/rupeeSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTransactionDateToDisplay"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp5"
+            android:layout_toLeftOf="@id/tvTransactionAmount"
+            android:text="$"
+            android:textColor="@color/red"
+            android:textSize="@dimen/sp25" />
+
+        <TextView
+            android:id="@+id/tvTransactionAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTransactionDateToDisplay"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:text="155"
+            android:textColor="@color/red"
+            android:textSize="@dimen/sp25" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

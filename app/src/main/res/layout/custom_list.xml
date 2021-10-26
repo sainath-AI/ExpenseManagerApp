@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/_24sdp"
+            android:id="@+id/ivCategory"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            android:layout_margin="@dimen/_10sdp"
+            tools:src="@drawable/food_beverage"
+            android:layout_height="@dimen/_24sdp"/>
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:textAllCaps="true"
+            android:textColor="@color/grey_900"
+            android:textSize="@dimen/_16sdp"
+            tools:text="Item Value" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/divider_line_color" />
+
+
+</LinearLayout>
