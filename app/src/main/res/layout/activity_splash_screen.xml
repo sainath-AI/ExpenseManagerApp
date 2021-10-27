@@ -20,4 +20,17 @@
         app:lottie_loop="false"
         app:lottie_rawRes="@raw/money" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Expenses App"
+        android:textColor="@color/dark_blue"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lottieAnimationView"
+        app:layout_constraintVertical_bias="0.098" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -51,13 +51,13 @@
             android:layout_below="@+id/tvTransactionDateToDisplay"
             android:layout_centerVertical="true"
             android:layout_marginStart="@dimen/dp10"
-            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="19dp"
             android:layout_marginEnd="@dimen/dp10"
             android:layout_toRightOf="@id/ivCategoryImage"
             android:text="sds"
             android:textColor="@color/black"
             android:textSize="@dimen/sp_18" />
-
 
         <TextView
             android:id="@+id/rupeeSymbol"
@@ -69,8 +69,8 @@
             android:layout_marginEnd="@dimen/dp5"
             android:layout_toLeftOf="@id/tvTransactionAmount"
             android:text="$"
-            android:textColor="@color/red"
-            android:textSize="@dimen/sp25" />
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/_18sdp" />
 
         <TextView
             android:id="@+id/tvTransactionAmount"
@@ -82,8 +82,8 @@
             android:layout_marginTop="@dimen/dp10"
             android:layout_marginEnd="@dimen/dp_20"
             android:text="155"
-            android:textColor="@color/red"
-            android:textSize="@dimen/sp25" />
+            android:textColor="@color/dark_gray"
+            android:textSize="22sp" />
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>
